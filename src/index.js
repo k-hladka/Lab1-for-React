@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {Table} from "./Table";
 import {Number} from "./Number";
+import {Rabbit} from "./Rabbit";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,8 @@ root.render(
         <Number />
         {/* В перший компонент 'Number' передані всі параметри (2 числа). В другий - не передані взагалі
         (вони приймають, в такому випадку, значення за замов.).*/}
+
+        <Rabbit step={10}/>
     </React.StrictMode>
 );
 
